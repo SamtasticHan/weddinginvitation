@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Pretendard', sans-serif;
   background: #fffaf7;
-  color: #333;
+  color: white;
   text-align: center;
 }
 
@@ -126,3 +126,4 @@ section {
     transform: translateY(0);
   }
 }
+
