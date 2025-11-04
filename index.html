@@ -67,11 +67,26 @@
   </section>
 
   <section class="gift fade-in">
-    <h3>마음 전하실 곳</h3>
-    <button class="btn account-btn" onclick="copyAccount('신랑')">신랑측 계좌번호 보기</button>
-    <button class="btn account-btn" onclick="copyAccount('신부')">신부측 계좌번호 보기</button>
-    <p id="accountMsg"></p>
-  </section>
+  <h3>마음 전하실 곳</h3>
+  
+  <div class="account-section">
+    <button class="btn account-btn" onclick="toggleAccount('groom')">신랑측 계좌번호 보기</button>
+    <div id="groomAccount" class="account-info">
+      <p>신랑 한상우 / 카카오뱅크 3333-30-2663222</p>
+      <button class="btn small" onclick="copyToClipboard('신랑 한상우 / 카카오뱅크 3333-30-2663222')">복사하기</button>
+    </div>
+  </div>
+
+  <div class="account-section">
+    <button class="btn account-btn" onclick="toggleAccount('bride')">신부측 계좌번호 보기</button>
+    <div id="brideAccount" class="account-info">
+      <p>신부 안은정 / 카카오뱅크 3333-01-4974626</p>
+      <button class="btn small" onclick="copyToClipboard('신부 안은정 / 카카오뱅크 3333-01-4974626')">복사하기</button>
+    </div>
+  </div>
+
+  <p id="accountMsg"></p>
+</section>
 
   <section class="contact fade-in">
     <h3>신랑 · 신부에게 연락하기</h3>
