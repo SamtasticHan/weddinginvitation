@@ -132,23 +132,37 @@ section {
   }
 }
 
+
+/* 계좌번호 */
 .account-info {
   display: none;
   background: #f7f2eb;
   margin-top: 8px;
-  padding: 10px;
+  padding: 12px;
   border-radius: 6px;
   font-size: 15px;
   color: #5b3a29;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.account-info strong {
+  color: #5b3a29;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 12px 0;
 }
 
 .btn.small {
-  margin-top: 8px;
+  display: inline-block;
+  margin-top: 6px;
   padding: 6px 12px;
   font-size: 14px;
   background: #a48765;
 }
-
 
 
 
