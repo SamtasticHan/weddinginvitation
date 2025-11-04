@@ -1,15 +1,4 @@
-// 계좌번호 보기
-function copyAccount(type) {
-  let account = "";
-  if (type === '신랑') {
-    account = "신랑 한상우 / 카카오뱅크 3333-30-2663222";
-  } else {
-    account = "신부 안은정 / 카카오뱅크 3333-01-4974626";
-  }
 
-  navigator.clipboard.writeText(account);
-  document.getElementById("accountMsg").innerText = `${type}측 계좌번호가 복사되었습니다.`;
-}
 
 
 // --- 갤러리 확대 기능 ---
@@ -60,6 +49,31 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+// --- 계좌번호 토글 ---
+function toggleAccount(type) {
+  const groom = document.getElementById("groomAccount");
+  const bride = document.getElementById("brideAccount");
+
+  if (type === 'groom') {
+    groom.style.display = (groom.style.display === 'block') ? 'none' : 'block';
+    bride.style.display = 'none'; // 한쪽만 열림
+  } else {
+    bride.style.display = (bride.style.display === 'block') ? 'none' : 'block';
+    groom.style.display = 'none';
+  }
+}
+
+// --- 복사 기능 ---
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    const msg = document.getElementById("accountMsg");
+    msg.innerText = "계좌번호가 복사되었습니다.";
+    msg.style.color = "#8b6f47";
+    setTimeout(() => msg.innerText = "", 2000);
+  });
+}
+
 
 
 
