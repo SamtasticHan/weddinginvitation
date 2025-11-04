@@ -132,6 +132,24 @@ section {
   }
 }
 
+.account-info {
+  display: none;
+  background: #f7f2eb;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #5b3a29;
+}
+
+.btn.small {
+  margin-top: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background: #a48765;
+}
+
+
 
 
 
