@@ -165,6 +165,27 @@ section {
 }
 
 
+.link-copy {
+  text-align: center;
+  padding: 30px 0;
+  background: #fffaf7;
+}
+
+.link-btn {
+  background: #6b563b;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.link-btn:hover {
+  background: #584530;
+}
+
+
+
 
 
 
