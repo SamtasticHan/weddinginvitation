@@ -185,6 +185,34 @@ section {
 }
 
 
+.link-copy {
+  text-align: center;
+  padding: 30px 0;
+  background: #fffaf7;
+}
+
+.link-btn, .kakao-btn {
+  background: #6b563b;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 8px auto;
+  width: 80%;
+  max-width: 300px;
+}
+
+.kakao-btn {
+  background: #FEE500;
+  color: #3C1E1E;
+}
+
+.kakao-btn:hover {
+  background: #fbd600;
+}
+
 
 
 
