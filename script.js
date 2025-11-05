@@ -94,7 +94,7 @@ function shareKakao() {
     content: {
       title: '우리의 결혼식에 초대합니다 💍',
       description: '소중한 당신을 초대합니다. 함께해 주세요.',
-      imageUrl: 'https://your-domain.com/images/main_photo.jpg', // 대표 이미지 URL
+      imageUrl: 'https://samtastichan.github.io/weddinginvitation/img/main.JPG', // 대표 이미지 URL
       link: {
         mobileWebUrl: url,
         webUrl: url
@@ -111,6 +111,7 @@ function shareKakao() {
     ]
   });
 }
+
 
 
 
