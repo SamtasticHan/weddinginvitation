@@ -92,7 +92,7 @@ function shareKakao() {
   Kakao.Share.sendDefault({
     objectType: 'feed',
     content: {
-      title: '우리의 결혼식에 초대합니다 💍',
+      title: '한상우 ♥ 안은정 결혼식에 초대합니다 💍',
       description: '소중한 당신을 초대합니다. 함께해 주세요.',
       imageUrl: 'https://samtastichan.github.io/weddinginvitation/img/main.JPG', // 대표 이미지 URL
       link: {
@@ -111,6 +111,7 @@ function shareKakao() {
     ]
   });
 }
+
 
 
 
