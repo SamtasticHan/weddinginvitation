@@ -87,6 +87,33 @@ function copyLink() {
   });
 }
 
+function shareKakao() {
+  const url = window.location.href;
+  Kakao.Share.sendDefault({
+    objectType: 'feed',
+    content: {
+      title: '우리의 결혼식에 초대합니다 💍',
+      description: '소중한 당신을 초대합니다. 함께해 주세요.',
+      imageUrl: 'https://your-domain.com/images/main_photo.jpg', // 대표 이미지 URL
+      link: {
+        mobileWebUrl: url,
+        webUrl: url
+      },
+    },
+    buttons: [
+      {
+        title: '청첩장 보기',
+        link: {
+          mobileWebUrl: url,
+          webUrl: url
+        },
+      },
+    ]
+  });
+}
+
+
+
 
 
 
