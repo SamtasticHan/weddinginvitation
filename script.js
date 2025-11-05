@@ -74,6 +74,20 @@ function copyToClipboard(text) {
   });
 }
 
+function copyLink() {
+  const url = window.location.href;
+  navigator.clipboard.writeText(url).then(() => {
+    const msg = document.getElementById("linkMsg");
+    msg.innerText = "링크가 복사되었습니다.";
+    msg.style.color = "#8b6f47";
+    setTimeout(() => msg.innerText = "", 2000);
+  }).catch(err => {
+    alert("복사에 실패했습니다. 브라우저에서 수동으로 복사해 주세요.");
+    console.error(err);
+  });
+}
+
+
 
 
 
